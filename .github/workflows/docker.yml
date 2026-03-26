@@ -29,5 +29,5 @@ jobs:
           username: sewan
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~
+            cd /home/sewan/ansible-lab
             ansible-playbook -i hosts docker-nginx.yml
